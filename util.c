@@ -24,3 +24,13 @@ double destinationLatitude,double destinationLongitude)
 
     return distance;
 }
+
+double lorentzTimeDilation(double t,double percentC)
+{
+    double speedOfLight=299792458.0;
+    double fracC=percentC/100.0;  
+    double dilatedTime=t/sqrt(1-pow(fracC,2)/pow(speedOfLight,2));
+
+
+    return dilatedTime;
+}
