@@ -39,3 +39,15 @@ int main()
     printf("Input: t = %f, percentC = %f\n", t1, s1);
     printf("Expected Output: %f\n", lorentzTimeDilation(t1, s1));
     printf("Actual Output: %f\n", lorentzTimeDilation(t1, s1));
+
+     if(lorentzTimeDilation(t1,s1)==1.0000000007)
+    {
+        printf("test passed");
+    }
+    else 
+    {
+        printf("test failed");
+    }
+
+    return 0;
+}
