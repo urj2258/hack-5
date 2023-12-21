@@ -5,5 +5,10 @@
 double degreesToRadians(double degree){
    
     return degree*3.14/180;
-    
+
 }
+
+double getAirDistance(double originLatitude,double originlongitude,
+double destinationLatitude,double destinationLongitude)
+{
+    double earthR=6371.0;
