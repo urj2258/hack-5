@@ -12,3 +12,8 @@ double getAirDistance(double originLatitude,double originlongitude,
 double destinationLatitude,double destinationLongitude)
 {
     double earthR=6371.0;
+
+    originLatitude = degreesToRadians(originLatitude);
+    originlongitude = degreesToRadians(originlongitude);
+    destinationLatitude = degreesToRadians(destinationLatitude);
+    destinationLongitude = degreesToRadians(destinationLongitude);
